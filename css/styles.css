@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+/*textos*/
+
+.titulo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;
+  color: #0B3E5D;
+  text-align: center;
+
+  left: 15%;
+  top: 75px;
+  z-index: 999;
+}
+
+
+.subtitulo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #2370c8;
+  margin-top: 5px;
+}
+
+
+.texto-regular {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300; 
+  font-size: 18px;
+  color: #262A4E;
+  text-align: center;
+}
+
+.texto-bold{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700; 
+  font-size: 24px;
+  color: #262A4E;
+  text-align: center;
+}
+
+/*Porfolio*/
+#porfolio .col-lg-4{
+  margin: 0 !important;
+  padding: 10px;
+}
+
+#porfolio img{
+  width: 100%;
+  height: 250px;
+  border: 1px solid #00359C;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#porfolio img:hover{
+  border: 5px solid white;
+  background: rgba(90, 152, 247, 0.7);
+
+}
+
+.boton{
+position: absolute;
+top: 0;
+width: 100%;
+height: 250px;
+
+transition: all 500ms ease-out;
+/*visibility: hidden;
+opacity: 0;*/
+text-align: center;
+}
+
+
+
+
+/*Contanos de tu proyectos*/
+
+.contenedor-proyecto{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons a{
+  align-items: baseline;
+}
+
+
+
+/*Confian en Nosotros*/
+
+/*carruesel*/
+.carousel{
+  width: 720px;
+  height: 85px;
+}
+
+img{
+  margin: 10px 10px 10px 10px;
+}
+
+/*Footer*/
+
+footer{
+    background: #141364;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .footer-content p{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    font-size: 18px;
+  }
+  
+  .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 ren 0;
+  }
+  
+  .social li{
+    margin: 0 10px;
+  }
+  
+  .social a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .social a i{
+   font-size: 1.1rem;
+   transition: color .4s ease;
+  }
+  
+  .social a:hover i{
+    color:aqua;
+  }
+  
+  .footer-bottom{
+    background: #141364;
+    width: 100vw;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom p{
+    opacity: .4;
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+
+
