@@ -10,10 +10,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 56px;
   color: #0B3E5D;
   text-align: center;
-
   left: 15%;
   top: 75px;
   z-index: 999;
@@ -51,39 +49,91 @@
 }
 
 /*Porfolio*/
-#porfolio .col-lg-4{
-  margin: 0 !important;
-  padding: 10px;
+.card{
+  margin: 10px !important;
+  width: 100% !important;
+  height: 240px !important;
+  border: none !important;
+  background: #afc7f7 !important;
 }
 
-#porfolio img{
+.card img{
   width: 100%;
-  height: 250px;
+  height: 240px;
   border: 1px solid #00359C;
   border-radius: 5px;
   cursor: pointer;
+  opacity: 100;
 }
 
-#porfolio img:hover{
-  border: 5px solid white;
-  background: rgba(90, 152, 247, 0.7);
-
+.card:hover img{
+  opacity: 50%;
 }
 
 .boton{
 position: absolute;
-top: 0;
-width: 100%;
-height: 250px;
-
-transition: all 500ms ease-out;
-/*visibility: hidden;
-opacity: 0;*/
+width: 160px;
+height: 48px;
+border-radius: 30px;
+background-color: #00359C;
+visibility: hidden;
+padding: 10px;
 text-align: center;
+top: 77%;
+left: 25%;
+transition: top 3s;
+}
+
+.boton a{
+  font-size: 1rem;
+  color: white;  
+  text-decoration: none !important;
+}
+
+.card:hover .boton{
+  visibility:visible;
+  top: 70%;
 }
 
 
+/*contacto*/
+.form-control, .form-select {
+  color: #8BB0C7 !important;
+  border: 1px solid #0B3E5D !important;
+  width: 266px !important;
+  height: 36px !important;
+  font-weight: 300 !important;
+  border-radius: 5px;
+}
 
+.form-select option{
+  font-weight: 300 !important;
+}
+
+.boton_wsp{
+  position: absolute;
+  width: 266px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #00359C;
+  padding: 5px;
+  text-align: center;
+ }
+
+
+.btn--btn{
+  font-size: 1rem;
+    color: white;  
+    text-decoration: none !important;
+    text-align: center;
+}
+
+.btn--btn i{
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 300; 
+  padding-right: 15px;
+  
+}
 
 /*Contanos de tu proyectos*/
 
@@ -93,89 +143,144 @@ text-align: center;
 }
 
 .buttons{
-  padding: 50px;
   display: flex;
   justify-content: center;
 }
 
 .buttons a{
   align-items: baseline;
+  margin: 10px;
+}
+
+.buttons i{
+  padding-right: 10px;
+}
+
+.btn-outline-secondary{
+  color: #0B3E5D !important;
+  border-color: #0B3E5D !important;
+}
+
+.btn-outline-secondary:hover{
+  color: white !important;
+  border-color: #0B3E5D !important;
+  background: #0B3E5D !important;
+}
+
+.img-fluid{
+  width: 80% !important;
 }
 
 
-
-/*Confian en Nosotros*/
-
-/*carruesel*/
-.carousel{
-  width: 720px;
-  height: 85px;
-}
-
-img{
-  margin: 10px 10px 10px 10px;
-}
 
 /*Footer*/
 
 footer{
-    background: #141364;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    margin-top: 40px;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .footer-content p{
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 3rem;
-    font-size: 18px;
-  }
-  
-  .social{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3 ren 0;
-  }
-  
-  .social li{
-    margin: 0 10px;
-  }
-  
-  .social a{
-    text-decoration: none;
-    color: white;
-  }
-  
-  .social a i{
-   font-size: 1.1rem;
-   transition: color .4s ease;
-  }
-  
-  .social a:hover i{
-    color:aqua;
-  }
-  
-  .footer-bottom{
-    background: #141364;
-    width: 100vw;
-    padding: 20px 0;
-  }
-  
-  .footer-bottom p{
-    opacity: .4;
-    font-weight: 200;
-    font-size: 14px;
-  }
+  background: #141364;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.footer-content p{
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 18px;
+}
 
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3 ren 0;
+}
+
+.social li{
+  margin: 0 10px;
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+}
+
+.social a i{
+ font-size: 1.1rem;
+ transition: color .4s ease;
+}
+
+.social a:hover i{
+  color:aqua;
+}
+
+.footer-bottom{
+  background: #141364;
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.footer-bottom p{
+  opacity: .4;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+/* clientes */
+
+.servicios {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.servicios--cards__primera, 
+.servicios--cards__tercera, .servicios--cards__cuarta img {
+  height: 50%;
+  width: 50% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.servicios--cards__segunda, 
+.servicios--cards__quinta, 
+.servicios--cards__sexta img{
+  height: 20%;
+  width: 20% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 
