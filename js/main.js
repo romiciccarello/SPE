@@ -1,4 +1,12 @@
 
+// Typed effect
+
+var typed = new Typed(".auto-input", {
+    strings : ["Tiendas Virtuales", "Aplicaciones Web", "Hosting", "Dominios"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+})
 
 // Cards Carousel
 

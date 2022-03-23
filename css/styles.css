@@ -1,7 +1,1553 @@
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.noPadding {
+  padding: 0px !important;
+}
+
+.col-lg-12 {
+  padding: 0px !important;
+}
+
+/* Barra de navegacion */
+
+#navbarNav {
+  justify-content: end;
+}
+
+.navbar {
+  background: #ffffff !important;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
   font-family: "Rubik", sans-serif;
+  position: fixed !important;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: #0b3e5e !important;
+}
+
+.nav-link {
+  color: #0b3e5d !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid rgba(0, 53, 156, 0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 53, 156, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.demosNav {
+  display: flex;
+  border: 1px solid #0b3e5d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.demosNav a {
+  display: flex;
+}
+
+.imagenesDemo {
+  position: relative;
+  right: 4px;
+}
+
+.turnosAzul {
+  opacity: 1;
+}
+
+.turnosBlanco {
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.demosNav:hover .turnosAzul {
+  opacity: 0;
+}
+
+.demosNav:hover .turnosBlanco {
+  opacity: 1;
+}
+
+.demosNav:hover {
+  background-color: #0b3e5d;
+}
+
+.demosNav:hover a {
+  color: #ffffff !important;
+}
+
+/* Imagen principal */
+
+.imagenHeader {
+  width: 99%;
+  height: 100vh;
+}
+
+.textoHeader {
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  left: 15%;
+  top: 175px;
+  z-index: 998;
+}
+
+.textoHeader--somos {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  position: relative;
+  top: 10px;
+}
+
+.textoHeader--spe {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 57px;
+}
+
+.textoHeader--parrafo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* Animacion boton */
+
+.botonHeaderDesktop span {
+  transition: 0.4s ease-in-out all;
+  position: relative;
+}
+
+.botonHeaderDesktop .whatsappIcon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.botonHeaderDesktop svg {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.whatsappIcon img {
+  position: relative;
+  bottom: 7px;
+  width: 40px;
+  height: auto;
+}
+
+.botonHeaderDesktop {
+  width: 453px;
+  height: 75px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+
+  color: #00359c;
+
+  margin-top: 20px;
+
+  background: #ffffff;
+}
+
+/* Servicios */
+
+.servicios {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios--titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  letter-spacing: 0.15em;
+
+  color: #2370c8;
+
+  margin-top: 5px;
+}
+
+.servicios--texto {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56px;
+
+  color: #262a4e;
+  text-align: center;
+}
+
+.servicios--texto span {
+  color: #2370c8;
+}
+
+.wrapper {
+  width: 100%;
+}
+.carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.servicios--cards__primera {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__primeraImagen {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__primera h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__primera p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__primeraWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__primeraFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__primeraConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__primeraConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.flexItems {
+  display: flex;
+  position: relative;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #0b3e5d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.servicios--cards__primeraConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.servicios--cards__segundaConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.servicios--cards__terceraConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.servicios--cards__cuartaConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.servicios--cards__quintaConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.servicios--cards__sextaConectateAplicacionesWeb a {
+  text-decoration: none;
+}
+
+.flexItems:hover {
+  background-color: #0b3e5d;
+}
+
+.flexItems:hover .servicios--cards__primeraWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__segundaWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__terceraWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__cuartaWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__quintaWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__sextaWhatsApp {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__primeraFacebook {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__segundaFacebook {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__terceraFacebook {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__cuartaFacebook {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__quintaFacebook {
+  color: #ffffff;
+}
+
+.flexItems:hover .servicios--cards__sextaFacebook {
+  color: #ffffff;
+}
+
+.servicios--cards__segunda {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__segunda img {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__segunda h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__segunda p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__segundaWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__segundaFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__segundaConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__segundaConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.topSegunda {
+  top: 80px !important;
+}
+
+.servicios--cards__tercera {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__tercera img {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__tercera h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__tercera p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__terceraWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__terceraFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__terceraConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__terceraConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.servicios--cards__cuarta {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__cuarta img {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__cuarta h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__cuarta p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__cuartaWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__cuartaFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__cuartaConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__cuartaConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.servicios--cards__quinta {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__quinta img {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__quinta h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__quinta p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__quintaWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__quintaFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__quintaConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__quintaConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.servicios--cards__sexta {
+  background: #ffffff;
+  border: 3px solid #5577f7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-height: 315px;
+}
+
+.servicios--cards__sexta img {
+  height: 100px;
+  width: 100px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25px;
+}
+
+.servicios--cards__sexta h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #262a4e;
+  position: relative;
+  top: 40px;
+}
+
+.servicios--cards__sexta p {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0b3e5d;
+  position: relative;
+  top: 50px;
+  margin: 5px;
+}
+
+.servicios--cards__sextaWhatsApp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__sextaFacebook {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #0b3e5d;
+}
+
+.servicios--cards__sextaConectateAplicacionesWeb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  bottom: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.servicios--cards__sextaConectateAplicacionesWeb div img {
+  display: flex;
+  width: 20px !important;
+  height: auto;
+  top: 0px;
+  margin-right: 7px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #0072bc !important;
+}
+
+/* Sobre nosotros */
+
+.sobreNosotros {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.sobreNosotros img {
+  width: 550px;
+  height: 420px;
+}
+
+.sobreNosotros--titulo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: 0.15em;
+
+  color: #2370c8;
+}
+
+.sobreNosotros--texto {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #262a4e;
+}
+
+.sobreNosotros--descripcion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #646464;
+}
+
+.botonSobreNosotros span {
+  transition: 0.4s ease-in-out all;
+  position: relative;
+}
+
+.botonSobreNosotros .whatsappIconSobreNosotros {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -40px;
+  transition: 0.4s ease-in-out all;
+  opacity: 0;
+}
+
+.botonSobreNosotros svg {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.whatsappIconSobreNosotros img {
+  position: relative;
+  bottom: 7px;
+  width: 40px;
+  height: auto;
+}
+
+.botonSobreNosotros {
+  width: 434px;
+  height: 75px;
+
+  background: #87e768;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+
+  color: #00359c;
+}
+
+/* Vista Desktop y Tablet */
+
+@media only screen and (max-width: 800px) {
+  .servicios--cards__primera {
+    min-height: 350px;
+  }
+  .servicios--cards__segunda {
+    min-height: 350px;
+  }
+  .servicios--cards__tercera {
+    min-height: 350px;
+  }
+  .servicios--cards__cuarta {
+    min-height: 350px;
+  }
+  .servicios--cards__quinta {
+    min-height: 350px;
+  }
+  .servicios--cards__sexta {
+    min-height: 350px;
+  }
+  .topSegunda {
+    top: 55px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .imagenMobile {
+    display: none !important;
+  }
+
+  .textoHeader--parrafo__mobile {
+    display: none;
+  }
+
+  .botonHeaderMobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .servicios--texto br {
+    display: none;
+  }
+}
+
+/* Vista Mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .imagenDesktop {
+    display: none !important;
+  }
+
+  .imagenHeader {
+    width: 99%;
+    height: auto;
+  }
+
+  .textoHeader {
+    text-align: left;
+    top: 15%;
+    left: 0px;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+
+  .textoHeader--spe {
+    font-size: 2rem;
+  }
+
+  .textoHeader--somos {
+    display: none;
+  }
+
+  .textoHeader--parrafo {
+    display: none;
+  }
+
+  .textoHeader--parrafo__mobile {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 21px;
+    color: #ffffff;
+  }
+
+  .botonHeaderDesktop {
+    display: none;
+  }
+
+  .botonHeaderMobile {
+    width: 170px;
+    height: 60px;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #00359c;
+
+    margin-top: 20px;
+  }
+
+  .sobreNosotros--imagen {
+    display: none;
+  }
+
+  .sobreNosotros--texto {
+    font-size: 26px;
+  }
+
+  .sobreNosotros input {
+    width: 334px;
+    font-size: 20px;
+  }
+
+  .sobreNosotros div {
+    text-align: center;
+  }
+
+  .carousel {
+    max-width: auto;
+    padding: 0 20px;
+  }
+
+  .demosNav {
+    width: 160px;
+  }
+}
+
+.margenAncla {
+  margin-top: 40px;
+}
+
+/* Vista Desktop */
+
+@media only screen and (min-width: 1025px) {
+  .botonHeaderDesktop:hover {
+    background: #87e768;
+  }
+
+  .botonHeaderDesktop:hover .whatsappIcon {
+    left: 50px;
+    opacity: 1;
+  }
+
+  .botonHeaderDesktop:hover span {
+    left: 30px;
+  }
+
+  .botonSobreNosotros:hover {
+    background: #00359c;
+    color: #fff;
+  }
+
+  .botonSobreNosotros:hover .whatsappIconSobreNosotros {
+    left: 670px;
+    opacity: 1;
+  }
+
+  .botonSobreNosotros:hover span {
+    left: 30px;
+  }
+
+  /* Animacion hover cards */
+
+  .servicios--cards__primera:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__primera:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__primera:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__primera:hover .servicios--cards__primeraTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__primera:hover .servicios--cards__primeraParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__primera:hover
+    .servicios--cards__primeraConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .servicios--cards__segunda:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__segunda:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__segunda:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__segunda:hover .servicios--cards__segundaTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__segunda:hover .servicios--cards__segundaParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__segunda:hover
+    .servicios--cards__segundaConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .servicios--cards__tercera:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__tercera:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__tercera:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__tercera:hover .servicios--cards__terceraTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__tercera:hover .servicios--cards__terceraParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__tercera:hover
+    .servicios--cards__terceraConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .servicios--cards__cuarta:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__cuarta:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__cuarta:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__cuarta:hover .servicios--cards__cuartaTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__cuarta:hover .servicios--cards__cuartaParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__cuarta:hover
+    .servicios--cards__cuartaConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .servicios--cards__quinta:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__quinta:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__quinta:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__quinta:hover .servicios--cards__quintaTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__quinta:hover .servicios--cards__quintaParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__quinta:hover
+    .servicios--cards__quintaConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .servicios--cards__sexta:hover .flexItems {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .servicios--cards__sexta:hover .flexItems img {
+    position: absolute;
+    right: 90px;
+    bottom: 10px;
+  }
+
+  .servicios--cards__sexta:hover img {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.1);
+  }
+
+  .servicios--cards__sexta:hover .servicios--cards__sextaTitulo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .servicios--cards__sexta:hover .servicios--cards__sextaParrafo {
+    position: relative;
+    top: 20px;
+  }
+
+  .servicios--cards__sexta:hover
+    .servicios--cards__sextaConectateAplicacionesWeb {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
+/* Vista tablet */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .textoHeader {
+    text-align: left;
+    top: 15%;
+    left: 0px;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+
+  .botonSobreNosotros {
+    width: 80%;
+  }
+
+  .textoHeader--spe {
+    font-size: 2rem;
+  }
+
+  .textoHeader--parrafo {
+    font-size: 1em;
+  }
+
+  .sobreNosotros--texto {
+    font-size: 36px;
+  }
+
+  .sobreNosotros input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .sobreNosotros div {
+    text-align: center;
+  }
+
+  .demosNav {
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1180px) {
+  .sobreNosotros img {
+    width: 450px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .sobreNosotros--imagen {
+    display: none;
+  }
+
+  .botonSobreNosotros {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .servicios--cards__primeraConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  .servicios--cards__segundaConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  .servicios--cards__terceraConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  .servicios--cards__cuartaConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  .servicios--cards__quintaConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  .servicios--cards__sextaConectateAplicacionesWeb {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 999px) and (max-width: 1025px) {
+  .flexItems {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .servicios--cards__primera {
+    min-height: 350px;
+  }
+
+  .servicios--cards__primeraConectateAplicacionesWeb {
+    top: 25px;
+  }
+
+  .servicios--cards__segunda {
+    min-height: 350px;
+  }
+
+  .servicios--cards__tercera {
+    min-height: 350px;
+  }
+
+  .servicios--cards__cuarta {
+    min-height: 350px;
+  }
+
+  .servicios--cards__quinta {
+    min-height: 350px;
+  }
+
+  .servicios--cards__sexta {
+    min-height: 350px;
+  }
+}
+
+@media only screen and (min-width: 909px) and (max-width: 998px) {
+  .servicios--cards__primeraConectateAplicacionesWeb {
+    top: 25px;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 787px) {
+  .servicios--cards__primeraConectateAplicacionesWeb {
+    top: 25px;
+  }
+  .servicios--cards__segundaConectateAplicacionesWeb {
+    top: 25px;
+  }
+  .servicios--cards__terceraConectateAplicacionesWeb {
+    top: 25px;
+  }
+  .servicios--cards__quintaConectateAplicacionesWeb {
+    top: 25px;
+  }
+  .servicios--cards__sextaConectateAplicacionesWeb {
+    top: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textoHeader {
+    top: 5% !important;
+  }
 }
 
 
