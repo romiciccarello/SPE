@@ -26,16 +26,15 @@
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/brands.min.css" integrity="sha512-BglNUJaVmT9HacZ2AsbVQxjswBmIf3AJj9hhXr/Yre33qU+A1p8gXUcavzcHYkWf5bIvLMIiEbdMrEVqb5h2Rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
+        
 </head>
 <body>
 
 
 <!--Romi-->
-    <!--Porfolio-->
+<!--Porfolio-->
 <div id="porfolio" class="container">
-    <div class="text-center pt-5">
+    <div class="porfolio">
         <h2 class="subtitulo">NUESTRO PORTFOLIO</h2>
         <p class="titulo">Dale vistazo a nuestro último trabajo</p>
     </div>
@@ -45,7 +44,7 @@
             <div class="card">
                 <img src="./images/porfolio/agustinetocafe.png" alt="">
                 <div class="boton">
-                   <a href="/" class="btn--btn">IR A WEB</a>                    
+                   <a href="https://demos.hsconsultores.com.mx/coffee/" class="btn--btn">IR A WEB</a>                    
                 </div>
             </div>
         </div>
@@ -61,7 +60,7 @@
             <div class="card">
                 <img src="./images/porfolio/cerca.png" alt="">
                 <div class="boton">
-                   <a href="/" class="btn--btn">IR A WEB</a>                    
+                   <a href="https://cardiologiadrsolisjose.com/" class="btn--btn">IR A WEB</a>                    
                 </div>
             </div>
         </div>
@@ -69,7 +68,7 @@
             <div class="card">
                 <img src="./images/porfolio/democontrol.png" alt="">
                 <div class="boton">
-                   <a href="/" class="btn--btn">IR A WEB</a>                    
+                   <a href="https://carfloseguridad.com/admin/" class="btn--btn">IR A WEB</a>                    
                 </div>
             </div>
         </div>
@@ -77,7 +76,7 @@
             <div class="card">
                 <img src="./images/porfolio/drescordamaglia.png" alt="">
                 <div class="boton">
-                   <a href="/" class="btn--btn">IR A WEB</a>                    
+                   <a href="https://consultoriodrescordamaglia.com/" class="btn--btn">IR A WEB</a>                    
                 </div>
             </div>
         </div>
@@ -85,7 +84,7 @@
             <div class="card">
                 <img src="./images/porfolio/drumajor.png" alt="">
                 <div class="boton">
-                   <a href="/" class="btn--btn">IR A WEB</a>                    
+                   <a href="https://app.drumsmajor.com.ar/" class="btn--btn">IR A WEB</a>                    
                 </div>
             </div>
         </div>
@@ -94,19 +93,16 @@
 </div>
 
 <!-- contacto -->
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2 class="subtitulo">CONTACTO</h2>
-                <p class="titulo">Hacer una consulta por Whatsapp</p>
-        </div>
+<div id="form" class="container">
+    <div class="form">
+        <h2 class="subtitulo">CONTACTO</h2>
+        <p class="titulo">Hacer una consulta por Whatsappo</p>
     </div>
+
     
     
-    <div class="container">
-            <form class="row g-4 needs-validation" novalidate>
-                <div class="col-md-3">
+        <form id="row--form" class="row">
+                <div class="col-sm-3">
                    <input type="text" class="form-control" id="validationDefault01" placeholder="Escriba su nombre" required>
                 </div>
         
@@ -128,22 +124,22 @@
       
                 <div class="col-md-3 ">
                     <div class="boton_wsp">
-                        <a href="/" class="btn--btn"><i> </i>Enviar Whatsapp</a>  
+                        <a href="https://api.whatsapp.com/send?phone=+543815566439" class="btn--btn"><i> </i>Enviar Whatsapp</a>  
                     </div>
                 </div>
-            </form>
-    </div>
+        </form>
+  
 </div>
 
 
-<!-- Contanos de tu proyecto. -->
-<div class="container-fluid">
-    <div class="text-center pt-5">
-        <h2 class="titulo">Contanos de tu proyecto</h2>
-    </div>
 
+<!-- Contanos de tu proyecto. -->
+<div id="proyectos"class="container">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-xs-6 align-self-center">
+            <div class="proyectos">
+                <h2 class="titulo">Contanos de tu proyecto</h2>
+            </div>
                 <div class="contenedor-proyecto">
                         <div class="texto-regular">
                             <p>¿Tenes algún problema con tu web?</p>
@@ -152,12 +148,12 @@
                         </div>
                 </div>      
                 <div class="buttons"> 
-                    <a href="/"  class="btn btn-outline-secondary"><i class="fa-brands fa-whatsapp"></i>Contactarse</a>
-                    <a href="/"  class="btn btn-outline-secondary"><i class="fa-brands fa-facebook-messenger"></i>Contactarse</a>
+                    <a href="https://api.whatsapp.com/send?phone=+543815566439"  class="btn btn-outline-secondary"><i class="fa-brands fa-whatsapp"></i>Contactarse</a>
+                    <a href="https://m.me/speproduccionesweb"  class="btn btn-outline-secondary"><i class="fa-brands fa-facebook-messenger"></i>Contactarse</a>
                 </div>
         </div>
             
-        <div class="col-lg-6 col-md-6 col-xs-6">
+        <div class="col-lg-6 col-md-6 col-xs-6 align-self-center">
                 <img src="./images/contanos_tu_proyecto.png" alt="contanos_tu_proyect0" class="img-fluid">
         </div>
 
@@ -166,38 +162,36 @@
 </div>
 
 
-
 <!-- Confian en Nosotros -->
-<div class="container servicios">
+<div id="confianza" class="container">
+    <div class="confianza">
+        <h2 class="titulo">Confian en Nosotros</h2>
+    </div>
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12">
-        <p class="titulo">Confian en Nosotros<br><span class="auto-input"></span></p>
+        <div class="wrapper">
+            <div class="carousel cliente owl-carousel">
+                <div class="cliente--cards__primera">
+                    <img src="./images/brand/logo CAFE.png" alt="cafe">
+                </div>
+                <div class="cliente--cards__segunda">
+                    <img src="./images/brand/logo CARFLO.png" alt="carflo">
+                </div>
+                <div class="cliente--cards__tercera">
+                    <img src="./images/brand/logo CERCA.png" alt="cerca">
+                </div>
+                <div class="cliente--cards__cuarta">
+                    <img src="./images/brand/logo DRUMAJOR.png" alt="drumajor">
+                </div>
+                <div class="cliente--cards__quinta">
+                    <img src="./images/brand/logo LA NATURA HOSTEL.png" alt="la_natura_hostel">
+                </div>
+                    <div class="cliente--cards__sexta">
+                        <img src="./images/brand/logo solylunabolivia.png" alt="solylunabolivia">
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="wrapper">
-    <div class="carousel owl-carousel">
-        <div class="servicios--cards__primera">
-            <img src="./images/brand/logo CAFE.png" alt="cafe">
-        </div>
-        <div class="servicios--cards__segunda">
-            <img src="./images/brand/logo CARFLO.png" alt="carflo">
-        </div>
-        <div class="servicios--cards__tercera">
-            <img src="./images/brand/logo CERCA.png" alt="cerca">
-        </div>
-        <div class="servicios--cards__cuarta">
-            <img src="./images/brand/logo DRUMAJOR.png" alt="drumajor">
-        </div>
-        <div class="servicios--cards__quinta">
-            <img src="./images/brand/logo LA NATURA HOSTEL.png" alt="la_natura_hostel">
-       </div>
-        <div class="servicios--cards__sexta">
-            <img src="./images/brand/logo solylunabolivia.png" alt="solylunabolivia">
-        </div>
-    </div>
-</div>
-
 
 <!--Footer RC-->
 <footer>
@@ -219,6 +213,7 @@
 </footer>
 
 <!--fin secciones RC-->
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

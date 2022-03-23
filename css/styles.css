@@ -4,9 +4,13 @@
   font-family: "Rubik", sans-serif;
 }
 
-/*textos*/
 
+/*romi*/
+  
+/*textos*/
+  
 .titulo {
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -19,6 +23,7 @@
 
 
 .subtitulo {
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -49,6 +54,11 @@
 }
 
 /*Porfolio*/
+.porfolio{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
 .card{
   margin: 10px !important;
   width: 100% !important;
@@ -85,11 +95,11 @@ transition: top 3s;
 }
 
 .boton a{
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   color: white;  
   text-decoration: none !important;
 }
-
 .card:hover .boton{
   visibility:visible;
   top: 70%;
@@ -97,11 +107,20 @@ transition: top 3s;
 
 
 /*contacto*/
+
+.form{
+margin-top: 100px;
+margin-bottom: 50px;
+}
+
+#row--form{
+display: flex;
+flex-direction: row;
+}
+
 .form-control, .form-select {
   color: #8BB0C7 !important;
   border: 1px solid #0B3E5D !important;
-  width: 266px !important;
-  height: 36px !important;
   font-weight: 300 !important;
   border-radius: 5px;
 }
@@ -111,15 +130,14 @@ transition: top 3s;
 }
 
 .boton_wsp{
-  position: absolute;
+  position: relative;
   width: 266px;
   height: 36px;
   border-radius: 5px;
   background-color: #00359C;
   padding: 5px;
   text-align: center;
- }
-
+}
 
 .btn--btn{
   font-size: 1rem;
@@ -136,6 +154,7 @@ transition: top 3s;
 }
 
 /*Contanos de tu proyectos*/
+
 
 .contenedor-proyecto{
   display: flex;
@@ -167,11 +186,81 @@ transition: top 3s;
   background: #0B3E5D !important;
 }
 
-.img-fluid{
-  width: 80% !important;
+#proyectos {
+  margin-top: 100px !important;
+  margin-bottom: 50px !important;
 }
 
+.img-fluid{
+  height: 80%;
+}
 
+  /* clientes */
+
+.confianza {
+margin-top: 100px;
+margin-bottom: 50px;
+}
+    
+.carousel {
+max-width: 1200px;
+margin: auto;
+padding: 0 30px;
+display: flex;
+flex-direction: column;
+}
+    
+.wrapper {
+width: 100%;
+}
+
+.carousel {
+max-width: 1200px;
+margin: auto;
+padding: 0 30px;
+}
+
+.carousel .card {
+color: #fff;
+text-align: center;
+margin: 20px 0;
+}
+    
+.cliente--cards__primera, 
+.cliente--cards__tercera, .cliente--cards__cuarta img {
+height: 50%;
+width: 50% !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+}
+    
+.cliente--cards__segunda, 
+.cliente--cards__quinta, 
+.cliente--cards__sexta img{
+height: 20%;
+width: 20% !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+}
+
+.cliente .owl-dots {
+border-color: white !important;
+}
+  
+.cliente .owl-dot {
+box-shadow: none !important;
+border-color: white !important;
+cursor: none;
+}
+
+.cliente .owl-dot.active,
+.cliente .owl-dot:hover {
+background: white !important;
+}
 
 /*Footer*/
 
@@ -234,53 +323,40 @@ footer{
   font-size: 14px;
 }
 
-/* clientes */
+/* Vista Desktop y Tablet */
+@media only screen and (max-width: 1000px) {
+  .boton_wsp{
+    width: 100%;
+  }
 
-.servicios {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  .btn--btn{
+    font-size: 0.8rem;
+    
+  }
+
+  .carousel {
+    max-width: 800px;
+  }
+
 }
 
-.carousel {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-}
+/* mobil */
+@media only screen and (max-width: 459px) {
+.card img{
+  width: 95%;
+    }
 
-.wrapper {
+.boton_wsp{
   width: 100%;
-}
-.carousel {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-}
-.carousel .card {
-  color: #fff;
-  text-align: center;
-  margin: 20px 0;
+  margin-top: 10px;
 }
 
-.servicios--cards__primera, 
-.servicios--cards__tercera, .servicios--cards__cuarta img {
-  height: 50%;
-  width: 50% !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+.btn--btn{
+  font-size: 0.8rem;
 }
 
-.servicios--cards__segunda, 
-.servicios--cards__quinta, 
-.servicios--cards__sexta img{
-  height: 20%;
-  width: 20% !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+.form-control, .form-select {
+  margin-top: 10px;
 }
 
+}
